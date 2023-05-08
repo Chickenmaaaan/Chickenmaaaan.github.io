@@ -1,0 +1,100 @@
+body{
+    background-color:#537570;
+    overflow:hidden;
+}
+.header{
+    display:flex;
+    position: absolute;
+    top:auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    height:100px;
+    color:white;
+    background-color: #283835;
+    padding: 50px;
+}
+.sidenamn{
+    padding-right: 50%;
+    padding-left: 50%;
+    font-size: 2vmax;
+}
+.tilbake{
+    position:relative;
+    top: 200px;
+    left: 20px;
+    width: 50px;
+    padding-left: 0.25%;
+    border-style: double;
+    border-radius: 20px;
+    border-color: white;
+    
+}
+.info{
+    position:relative;
+    top:250px;
+    color:#283835;
+    text-align: center;
+    background-color:#537570;
+    border-style: double;
+    border-color: white;
+    border-radius: 20px;
+    
+}
+.a:link, a:visited{
+    color:#283835;
+    background-color: #283835;
+    animation-name: hover;
+    animation-duration: 1s;
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4{
+    padding: 1vmin;
+    background-color: #283835;
+    color:#81B5AC;
+    border-style: double;
+    border-color: white;
+    border-radius: 1vmax;
+    text-decoration: none;
+}
+.grid-item1:hover, .grid-item2:hover, .grid-item3:hover, .grid-item4:hover{
+    animation-name: hover;
+    animation-duration: 1s;
+}
+@keyframes link{
+    from {color:#81B5AC;}
+    to {color:#283835 ;}
+}
+@keyframes hover{
+    from {color:#81B5AC; background-color:#283835;}
+    to {color:#283835; background-color: #81B5AC;}
+}
+.logo{
+    position: fixed;
+    top:auto;
+    
+}
+.grid-container{
+    display:grid;
+    position: fixed;
+    width: 91%;
+    grid-template-columns: auto auto;
+    column-gap: 2vmax;
+    row-gap: 8vmax;
+    align-content: center;
+    font-size:1.5vmax;
+    text-align: center;
+    margin-top: 210px;
+    padding: 7vmax;
+    color: white;
+    border-color: white;
+    border-style: double;
+    border-radius: 20px;
+    border-width: 7px;
+}
+.om_meg{
+    display: block;
+    position: fixed;
+    color:white;
+    background-color: #81B5AC;
+}
